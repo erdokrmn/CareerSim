@@ -1,0 +1,60 @@
+@inject CareerSim.Services.IServices.IUserImageService ImageService
+
+@{
+
+    Layout = null;
+    var profileImage = await ImageService.GetProfileImageUrlAsync();
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Kullanıcı Paneli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" /> 
+
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button id="sidebarToggle" class="sidebar-toggle-btn"><i class="fas fa-bars"></i></button>
+            <a asp-controller="Home" asp-action="Index" class="nav-link">Anasayfa</a>
+            <a asp-controller="Career" asp-action="CareerList" class="nav-link">Kariyer</a>
+            <a asp-controller="Career" asp-action="MySummaries" class="nav-link">AI Sonuçlarım</a>
+        </div>
+        <div class="header-right">
+            <a asp-controller="User" asp-action="Profile" class="profile-link">
+                <img src="@profileImage" alt="Profil" class="profile-pic" />
+            </a>
+            <form asp-controller="Auth" asp-action="Logout" method="post" class="inline-form">
+                <button type="submit" class="logout-btn">Çıkış</button>
+            </form>
+            <button id="themeToggle" class="toggle-theme-btn"><i class="fas fa-adjust"></i></button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <nav class="sidebar" id="sidebar">
+            <a asp-controller="Home" asp-action="Index" class="sidebar-link"><i class="fas fa-home icon"></i><span class="text">Anasayfa</span></a>
+            <a asp-controller="User" asp-action="Profile" class="sidebar-link"><i class="fas fa-user icon"></i><span class="text">Profil</span></a>
+            <a asp-controller="Career" asp-action="CareerList" class="sidebar-link"><i class="fas fa-briefcase icon"></i><span class="text">Kariyer</span></a>
+            <a asp-controller="Career" asp-action="MySummaries" class="sidebar-link"><i class="fas fa-lightbulb icon"></i><span class="text">AI Sonuçlarım</span></a>
+            <a asp-controller="Question" asp-action="CreateMatrixQuestion" class="sidebar-link"><i class="fas fa-lightbulb icon"></i><span class="text">Matris Sorusu Ekle</span></a>
+        </nav>
+        <main class="content-area">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer fixed-bottom">
+        <p>© 2025 CareerSim. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="~/js/theme-and-sidebar.js"></script>
+    <script src="~/js/toggleDetails.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

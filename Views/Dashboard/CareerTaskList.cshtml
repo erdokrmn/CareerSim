@@ -1,0 +1,42 @@
+@model IEnumerable<CareerSim.Models.Career.CareerTask>
+
+@{
+    ViewData["Title"] = "Görev Listesi";
+    Layout = "_DashboardLayout";
+}
+
+<h2>@ViewBag.CareerTitle - Görevler</h2>
+
+<a class="btn btn-primary mb-3" asp-action="AddCareerTask" asp-route-careerId="@ViewBag.CareerId">Yeni Görev Ekle</a>
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-info">Henüz bu kariyere ait tanımlı görev bulunmamaktadır.</div>
+}
+else
+{
+    <table class="table datatable">
+        <thead>
+            <tr>
+                <th>Sıra</th>
+                <th>Başlık</th>
+                <th>Açıklama</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model)
+            {
+                <tr>
+                    <td>@task.Order</td>
+                    <td>@task.Title</td>
+                    <td>@task.Description</td>
+                    <td>
+                        <a class="btn btn-sm btn-warning" asp-action="EditCareerTask" asp-route-id="@task.Id">Düzenle</a>
+                        <a class="btn btn-sm btn-danger" asp-action="DeleteCareerTask" asp-route-id="@task.Id">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

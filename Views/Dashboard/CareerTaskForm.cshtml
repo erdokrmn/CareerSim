@@ -1,0 +1,69 @@
+@model CareerSim.Models.Career.CareerTask
+
+@{
+    ViewData["Title"] = Model.Id == 0 ? "Yeni Görev Ekle" : "Görev Düzenle";
+    Layout = "_DashboardLayout";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (ViewBag.CareerTitle != null)
+{
+    <div class="alert alert-primary">
+        Görev eklenecek kariyer: <strong>@ViewBag.CareerTitle</strong>
+    </div>
+}
+
+@if (ViewBag.ExistingTasks != null)
+{
+    <div class="mb-3">
+        <h5>Mevcut Görevler</h5>
+        <table class="table table-sm table-bordered">
+            <thead>
+                <tr>
+                    <th>Sıra</th>
+                    <th>Başlık</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var task in (IEnumerable<CareerSim.Models.Career.CareerTask>)ViewBag.ExistingTasks)
+                {
+                    <tr>
+                        <td>@task.Order</td>
+                        <td>@task.Title</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+<form asp-action="@(Model.Id == 0 ? "AddCareerTask" : "EditCareerTask")" method="post">
+    <input type="hidden" asp-for="CareerId" />
+    <input type="hidden" asp-for="Order" />
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="SampleAnswer" class="form-label"></label>
+        <textarea asp-for="SampleAnswer" class="form-control" rows="5"></textarea>
+        <span asp-validation-for="SampleAnswer" class="text-danger"></span>
+    </div>
+
+    <div class="mb-2">
+        <strong>Otomatik Atanacak Sıra (Order):</strong> @Model.Order
+    </div>
+
+    <button type="submit" class="btn btn-success">Kaydet</button>
+    <a asp-action="CareerTaskList" asp-route-careerId="@Model.CareerId" class="btn btn-secondary">Geri Dön</a>
+</form>

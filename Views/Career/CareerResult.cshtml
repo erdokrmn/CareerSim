@@ -1,0 +1,42 @@
+@model CareerSim.Models.ViewModels.CareerResultViewModel
+
+@{
+    ViewData["Title"] = "AI Değerlendirmesi";
+    Layout = "_UserLayout";
+}
+
+<h2>@Model.CareerTitle Simülasyonu — AI Değerlendirmesi</h2>
+
+<section>
+    <h3>🧩 Görev: @Model.TaskTitle</h3>
+    <p>@Model.TaskDescription</p>
+
+    @if (!string.IsNullOrWhiteSpace(Model.SampleAnswer))
+    {
+        <h4>📌 Örnek Cevap:</h4>
+        <pre>@Model.SampleAnswer</pre>
+    }
+</section>
+
+<section class="mt-4">
+    <h4>👤 Sizin Cevabınız:</h4>
+    <pre>@Model.UserAnswer</pre>
+    <small>Gönderim zamanı: @Model.SubmittedAt?.ToString("g")</small>
+</section>
+
+@if (Model.HasPremiumEvaluation)
+{
+    <section class="mt-4">
+        <h4>🤖 AI Değerlendirmesi:</h4>
+        <pre>@Model.FeedbackText</pre>
+    </section>
+}
+else
+{
+    <section class="alert alert-warning mt-4">
+        AI değerlendirmesi almak için
+        <a asp-action="EvaluateAnswer" asp-route-answerId="@Model.AnswerId" class="btn btn-sm btn-outline-primary">
+            Tıklayın
+        </a>
+    </section>
+}

@@ -1,0 +1,66 @@
+@model CareerSim.Models.ViewModels.CareerTaskViewModel
+@{
+    ViewData["Title"] = "Aktif Görev";
+    Layout = "_UserLayout";
+}
+
+<h2>@Model.CareerTitle Simülasyonu</h2>
+
+@if (!Model.IsCompleted)
+{
+    <h3>🧩 Görev: @Model.TaskTitle</h3>
+    <p>@Model.TaskDescription</p>
+
+    <form asp-action="SubmitAnswer" method="post">
+        <input type="hidden" name="CareerId" value="@Model.CareerId" />
+        <input type="hidden" name="TaskId" value="@Model.TaskId" />
+
+        <div class="form-group">
+            <label for="AnswerText">Cevabınız:</label>
+
+            <!-- Karakter sayacı -->
+            <p><span id="charCount">0</span>/300 karakter</p>
+
+            <!-- Kullanıcı cevabı -->
+            <textarea id="AnswerText" name="AnswerText" class="form-control" rows="6" maxlength="300" required></textarea>
+
+            <!-- Validasyon mesajı -->
+            <span asp-validation-for="AnswerText" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-2">Gönder</button>
+    </form>
+}
+else
+{
+    <div class="alert alert-success">
+        <h4>🎉 Tüm görevleri tamamladınız!</h4>
+        <p>Simülasyon sona erdi. Dilerseniz AI değerlendirmesi alabilirsiniz.</p>
+
+        @if (!string.IsNullOrWhiteSpace(Model.LastAnswerText))
+        {
+            <h5>Son Göreve Verdiğiniz Cevap:</h5>
+            <pre>@Model.LastAnswerText</pre>
+        }
+
+        <a asp-action="EvaluateSummary"
+           asp-controller="Career"
+           asp-route-careerId="@Model.CareerId"
+           class="btn btn-primary">
+            Tüm Cevapları Değerlendir
+        </a>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textarea = document.getElementById("AnswerText");
+            const counter = document.getElementById("charCount");
+
+            textarea.addEventListener("input", function () {
+                counter.textContent = textarea.value.length;
+            });
+        });
+    </script>
+}

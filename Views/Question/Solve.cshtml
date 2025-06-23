@@ -1,0 +1,52 @@
+﻿@model List<CareerSim.Models.Question.Question>
+@using CareerSim.Models.Question.Enum
+
+@{
+    ViewData["Title"] = "Soruları Çöz";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+@foreach (var q in Model)
+{
+    var mcq = q.MultipleChoiceDetail;
+    if (mcq == null) { continue; }
+
+    <div class="question-card">
+        @if (!string.IsNullOrEmpty(mcq.ImagePath))
+        {
+            <div class="question-image">
+                <img src="@mcq.ImagePath" alt="Soru Görseli" />
+            </div>
+        }
+
+        <div class="question-text">
+            <strong>@mcq.QuestionText</strong>
+        </div>
+
+        <div class="options-row">
+            
+            <label>
+                <input type="checkbox" name="answer_@q.Id" value="A" />
+                A) <img src="@mcq.OptionA" width="40" height="40" />
+            </label>
+            <label>
+                <input type="checkbox" name="answer_@q.Id" value="B" />
+                B) <img src="@mcq.OptionB" width="50" />
+            </label>
+            <label>
+                <input type="checkbox" name="answer_@q.Id" value="C" />
+                C) <img src="@mcq.OptionC" width="50" />
+            </label>
+            <label>
+                <input type="checkbox" name="answer_@q.Id" value="D" />
+                D) <img src="@mcq.OptionD" width="50" />
+            </label>
+            <label>
+                <input type="checkbox" name="answer_@q.Id" value="E" />
+                E) <img src="@mcq.OptionE" width="50" />
+            </label>
+        </div>
+
+    </div>
+}
+<link rel="stylesheet" href="~/css/solve.css" />

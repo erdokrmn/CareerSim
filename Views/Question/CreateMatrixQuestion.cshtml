@@ -1,0 +1,195 @@
+﻿@model CareerSim.Models.ViewModels.MatrixQuestionInputModel
+@using CareerSim.Models.Shape
+@using CareerSim.Models.Question.Enum
+
+@{
+    ViewData["Title"] = "Matrix Soru Oluştur";
+    var shapes = (List<Shape>)ViewBag.Shapes;
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+<link rel="stylesheet" href="~/css/matrix-question.css" />
+<div class="row">
+    <!-- Şekil Seçimi -->
+    <div class="col-md-3">
+        <div class="shape-list-wrapper box-container">
+            <h5>Şekiller</h5>
+            <div id="shape-list">
+                @foreach (var shape in shapes)
+                {
+                    <div class="shape-thumbnail" data-shape-id="@shape.Id">
+                        <img src="@shape.SvgPath" width="40" height="40" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Alanı -->
+    <div class="col-md-9">
+        <div class="form-wrapper box-container">
+            <form asp-action="CreateMatrixQuestion" method="post">
+                <label>Matris Boyutu:</label>
+                <select id="matrixSizeSelector" class="form-control" style="width:150px">
+                    <option value="1">1x1</option>
+                    <option value="2">2x2</option>
+                    <option value="3" selected>3x3</option>
+                </select>
+
+                <!-- Soru Matrisi -->
+                <div class="form-group mt-3">
+                    <label>Soru Matrisi</label>
+                    <div id="question-matrix" class="matrix-grid"></div>
+                    <input type="hidden" id="QuestionMatrix" name="QuestionMatrix" />
+                </div>
+
+                <div class="form-group mt-3">
+                    <label>Soru Metni</label>
+                    <textarea asp-for="QuestionText" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label>Doğru Cevap</label>
+                    <select asp-for="CorrectOption" class="form-control">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                    </select>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label>Zorluk</label>
+                    <select asp-for="Difficulty" asp-items="Html.GetEnumSelectList<DifficultyLevel>()" class="form-control">
+                        <option value="">Seçiniz</option>
+                    </select>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label>Soru Formatı</label>
+                    <select asp-for="QuestionFormat" asp-items="Html.GetEnumSelectList<QuestionFormat>()" class="form-control">
+                        <option value="">Seçiniz</option>
+                    </select>
+                </div>
+
+                <!-- Şıklar -->
+                <div class="options-flex-container mt-4">
+                    @for (int i = 0; i < 5; i++)
+                    {
+                        <div class="option-box">
+                            <label>Şık @(Convert.ToChar(65 + i))</label>
+                            <div class="matrix-grid option-matrix" data-option-index="@i"></div>
+                            <input type="hidden" name="OptionMatrices[@i]" class="option-matrix-json" />
+                        </div>
+                    }
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-4">Kaydet</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const shapeData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.Shapes));
+        let selectedShapeId = null;
+        let matrixSize = 3;
+
+        let questionMatrix = [];
+        let optionMatrices = [];
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".shape-thumbnail").forEach(el => {
+                el.addEventListener("click", () => {
+                    document.querySelectorAll(".shape-thumbnail").forEach(e => e.classList.remove("selected"));
+                    el.classList.add("selected");
+                    selectedShapeId = el.getAttribute("data-shape-id");
+                });
+            });
+
+            document.getElementById("matrixSizeSelector").addEventListener("change", function () {
+                matrixSize = parseInt(this.value);
+                rebuildMatrices();
+            });
+
+            rebuildMatrices();
+        });
+
+        function generateEmptyMatrix() {
+            return Array.from({ length: matrixSize }, () => Array(matrixSize).fill(""));
+        }
+
+        function rebuildMatrices() {
+            questionMatrix = generateEmptyMatrix();
+            optionMatrices = [];
+
+            for (let i = 0; i < 5; i++) {
+                optionMatrices.push(generateEmptyMatrix());
+            }
+
+            renderAllMatrices();
+            updateHiddenInputs();
+        }
+
+        function renderMatrix(container, matrix, type, index = null) {
+            container.innerHTML = '';
+            container.style.gridTemplateColumns = `repeat(${matrixSize}, 60px)`;
+            container.style.gridTemplateRows = `repeat(${matrixSize}, 60px)`;
+
+            for (let i = 0; i < matrix.length; i++) {
+                for (let j = 0; j < matrix[i].length; j++) {
+                    const shapeId = matrix[i][j];
+                    const cell = document.createElement("div");
+                    cell.className = "matrix-cell";
+
+                    const shape = shapeData.find(s => Number(s.Id) === Number(shapeId));
+                    if (shape && shape.SvgPath) {
+                        const img = document.createElement("img");
+                        img.src = shape.SvgPath;
+                        img.width = 40;
+                        img.height = 40;
+                        cell.appendChild(img);
+                    } else {
+                        cell.innerText = "+";
+                    }
+
+                    cell.onclick = function () {
+                        if (!selectedShapeId) {
+                            alert("Lütfen önce bir şekil seçin.");
+                            return;
+                        }
+
+                        if (type === "question") {
+                            questionMatrix[i][j] = selectedShapeId;
+                        } else {
+                            optionMatrices[index][i][j] = selectedShapeId;
+                        }
+
+                        renderAllMatrices();
+                        updateHiddenInputs();
+                    };
+
+                    container.appendChild(cell);
+                }
+            }
+        }
+
+        function renderAllMatrices() {
+            renderMatrix(document.getElementById("question-matrix"), questionMatrix, "question");
+            document.querySelectorAll(".option-matrix").forEach((el, idx) => {
+                renderMatrix(el, optionMatrices[idx], "option", idx);
+            });
+        }
+
+        function updateHiddenInputs() {
+            document.getElementById("QuestionMatrix").value = JSON.stringify(questionMatrix);
+            const optionInputs = document.querySelectorAll(".option-matrix-json");
+            optionMatrices.forEach((matrix, index) => {
+                if (optionInputs[index]) {
+                    optionInputs[index].value = JSON.stringify(matrix);
+                }
+            });
+        }
+    </script>
+}

@@ -1,0 +1,110 @@
+﻿/* Genel kutu stili */
+.box-container {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+}
+
+/* Shape listeleme alanı */
+.shape-list-wrapper {
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #f8f9fa;
+}
+
+#shape-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.shape-thumbnail {
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .shape-thumbnail:hover {
+        border-color: #adb5bd;
+    }
+
+    .shape-thumbnail.selected {
+        border-color: #339af0;
+        background-color: #e7f5ff;
+    }
+
+/* Form kutusu */
+.form-wrapper {
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fcfcfc;
+}
+
+/* Matris gridleri */
+.matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.matrix-cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    /* Görseli ortalamak için flex */
+    display: flex;
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+}
+
+    .matrix-cell.selected {
+        background-color: #d0ebff;
+        border: 2px solid #339af0;
+    }
+    .matrix-cell img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+    }
+
+/* Şıklar dizilimi */
+.options-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.option-box {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .option-box label {
+        margin-bottom: 8px;
+        font-weight: 500;
+    }

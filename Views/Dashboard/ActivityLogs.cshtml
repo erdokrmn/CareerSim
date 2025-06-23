@@ -1,0 +1,39 @@
+﻿@model List<ActivityLogViewModel>
+
+@{
+    ViewData["Title"] = "Kullanıcı Aktivite Logları";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml"; // Layout dosyana göre düzenleyebilirsin
+}
+
+<h2 class="mb-4">Kullanıcı Aktivite Logları</h2>
+
+
+<table class="table table-bordered datatable">
+    <thead>
+        <tr>
+            <th>Kullanıcı Adı</th>
+            <th>Ad Soyad</th>
+            <th>İşlem</th>
+            <th>Tarih</th>
+            <th>IP Adresi</th>
+            <th>Tarayıcı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var log in Model)
+        {
+            <tr>
+                <td>@log.UserName</td>
+                <td>@log.FullName</td>
+                <td>@log.Action</td>
+                <td>@log.Timestamp.ToLocalTime().ToString("g")</td>
+                <td>@log.IpAddress</td>
+                <td>@log.BrowserInfo</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+

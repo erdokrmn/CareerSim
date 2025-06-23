@@ -1,0 +1,33 @@
+﻿@{
+    var email = ViewBag.Email as string;
+}
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<!-- Kendi Stil Dosyan -->
+<link rel="stylesheet" href="~/css/style.css" />
+<script>
+    const checkInterval = 5000; // 5 saniyede bir kontrol et
+    const email = "@email";
+
+    setInterval(() => {
+        fetch(`/Auth/CheckEmailConfirmed?email=${email}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success && data.confirmed) {
+                    window.location.href = '/Auth/Login';
+                }
+            });
+    }, checkInterval);
+</script>
+
+
+<div class="container mt-5 text-center">
+    <h2>E-Posta Doğrulama Bekleniyor</h2>
+    <p><strong>@email</strong> adresine bir doğrulama bağlantısı gönderildi.</p>
+    <p>Lütfen e-posta kutunuzu kontrol edin ve bağlantıya tıklayın.</p>
+    <p>Doğrulama gelmediyse <a asp-action="ResendConfirmation" asp-route-email="@email">tekrar gönder</a></p>
+</div>
+
+

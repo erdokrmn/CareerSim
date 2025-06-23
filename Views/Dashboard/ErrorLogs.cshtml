@@ -1,0 +1,44 @@
+﻿@model List<ErrorLogViewModel>
+
+@{
+    ViewData["Title"] = "Hata Logları";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<h2 class="mb-4">Sistem Hata Logları</h2>
+
+
+<table class="table table-bordered datatable">
+    <thead>
+        <tr>
+            <th>Kullanıcı Adı</th>
+            <th>Ad Soyad</th>
+            <th>Hata Mesajı</th>
+            <th>Stack Trace</th>
+            <th>Yol</th>
+            <th>Tarayıcı</th>
+            <th>Tarih</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var log in Model)
+        {
+            <tr>
+                <td>@log.UserName</td>
+                <td>@log.FullName</td>
+                <td>@log.Message</td>
+                <td>
+                    <details>
+                        <summary>Detay</summary>
+                        <pre style="max-width: 400px; overflow-x: auto;">@log.StackTrace</pre>
+                    </details>
+                </td>
+                <td>@log.Path</td>
+                <td>@log.BrowserInfo</td>
+                <td>@log.Timestamp.ToLocalTime().ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

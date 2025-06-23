@@ -1,0 +1,66 @@
+﻿/* Sayfa düzeni */
+.shape-page-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Form alanı */
+.shape-form {
+    flex: 0 0 300px;
+}
+
+/* Listeleme alanı */
+.shape-list {
+    flex: 1;
+    max-height: 500px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+
+.shape-list-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.shape-item {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+}
+
+    .shape-item:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    .shape-item img {
+        max-width: 100%;
+        max-height: 60px;
+        object-fit: contain;
+    }
+
+.shape-label {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

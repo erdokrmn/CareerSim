@@ -1,0 +1,18 @@
+@model IEnumerable<CareerSim.Models.Career.Career>
+
+@{
+    ViewData["Title"] = "Kariyer Seç";
+    Layout = "_UserLayout";
+}
+
+<h2>Kariyer Seç</h2>
+
+<ul>
+    @foreach (var career in Model)
+    {
+        <li>
+            <strong>@career.Title</strong> - @career.Description
+            <a asp-action="Start" asp-route-careerId="@career.Id">Simülasyona Başla</a>
+        </li>
+    }
+</ul>

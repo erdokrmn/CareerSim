@@ -1,0 +1,86 @@
+﻿@model CareerSim.Models.Shape.Shape
+@using CareerSim.Models
+@using CareerSim.Models.Shape.Enum
+@using CareerSim.Data
+@inject AppDbContext _context
+
+@{
+    ViewData["Title"] = "Şekil Oluştur ve Listele";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+
+    var shapeList = _context.Shapes.ToList();
+}
+
+
+<link href="~/css/shape-list.css" rel="stylesheet" />
+
+<div class="shape-page-container mt-4 px-3">
+    <!-- Form -->
+    <div class="shape-form">
+        <h4 class="mb-3">Yeni Şekil Oluştur</h4>
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                @TempData["ErrorMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Kapat"></button>
+            </div>
+        }
+        <form asp-action="Create" method="post" class="border p-4 rounded shadow-sm bg-light">
+            <div class="form-group mb-3">
+                <label asp-for="ShapeType" class="form-label">Şekil Türü</label>
+                <select asp-for="ShapeType" class="form-select"
+                        asp-items="Html.GetEnumSelectList<ShapeType>()">
+                    <option value="">-- Seçiniz --</option>
+                </select>
+                <span asp-validation-for="ShapeType" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="FillStyle" class="form-label">Dolgu Stili</label>
+                <select asp-for="FillStyle" class="form-select"
+                        asp-items="Html.GetEnumSelectList<FillStyle>()">
+                    <option value="">-- Seçiniz --</option>
+                </select>
+                <span asp-validation-for="FillStyle" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Color" class="form-label">Renk</label>
+                <select asp-for="Color" class="form-select">
+                    <option value="black">Siyah</option>
+                    <option value="red">Kırmızı</option>
+                    <option value="green">Yeşil</option>
+                    <option value="blue">Mavi</option>
+                </select>
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Rotation" class="form-label">Dönüş Açısı</label>
+                <select asp-for="Rotation" class="form-select">
+                    <option value="0">0°</option>
+                    <option value="90">90°</option>
+                    <option value="180">180°</option>
+                    <option value="270">270°</option>
+                </select>
+                <span asp-validation-for="Rotation" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-2">SVG Oluştur</button>
+        </form>
+    </div>
+
+    <!-- Liste -->
+    <div class="shape-list">
+        <h4 class="mb-3">Kayıtlı Şekiller</h4>
+        <div class="shape-list-grid">
+            @foreach (var shape in shapeList)
+            {
+                <div class="shape-item">
+                    <img src="@shape.SvgPath" alt="svg" />
+                    <div class="shape-label">@shape.ShapeType</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

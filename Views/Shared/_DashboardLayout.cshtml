@@ -1,0 +1,61 @@
+@inject CareerSim.Services.IServices.IUserImageService ImageService
+@{
+    var profileImage = await ImageService.GetProfileImageUrlAsync();
+}
+
+@await Html.PartialAsync("_DatatableIncludes")
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin Panel</title>
+
+    <link rel="stylesheet" href="~/Dashboard/dashboard.css" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">Admin Panel</div>
+            <nav class="menu">
+                <a asp-controller="Dashboard" asp-action="Index">Ana Sayfa</a>
+                <a asp-controller="Dashboard" asp-action="ActivityLogs">Kullanıcı Aktiviteleri</a>
+                <a asp-controller="Dashboard" asp-action="ErrorLogs">Hata mesajları</a>
+                <a class="nav-link" asp-controller="Dashboard" asp-action="CareerList"> Kariyer Yönetimi</a>
+                <a class="nav-link" asp-controller="Shape" asp-action="Create"> SVG Şekil Üret</a>
+                <a asp-controller="Question" asp-action="CreateMatrixQuestion">Matris Soruru Üret</a>
+                <a asp-controller="Question" asp-action="Solve">Matris Sorularını Listele</a>
+                
+            </nav>
+        </aside>
+
+        <!-- Main Area -->
+        <main class="main">
+            <!-- Topbar -->
+            <header class="topbar">
+                <h1 class="page-title">@ViewData["Title"]</h1>
+
+                <div class="topbar-right">
+                    <div class="profile-info">
+                        <img src="@profileImage" alt="Profil" class="profile-pic" />
+                        <span class="username">@User.Identity?.Name</span>
+                    </div>
+
+                    <form asp-controller="Auth" asp-action="Logout" method="post" class="logout-form">
+                        <button type="submit" class="logout-btn">Çıkış</button>
+                    </form>
+                </div>
+            </header>
+
+            <section class="content">
+                @RenderBody()
+            </section>
+        </main>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

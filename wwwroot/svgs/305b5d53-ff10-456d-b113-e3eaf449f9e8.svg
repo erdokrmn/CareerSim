@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'>
+<polygon points='25, 10 40, 40 10, 40' fill='black' stroke='none' stroke-width='2' transform='rotate(0 25 25)' />
+<polygon points='75, 10 90, 40 60, 40' fill='black' stroke='none' stroke-width='2' transform='rotate(0 75 25)' />
+<polygon points='25, 60 40, 90 10, 90' fill='black' stroke='none' stroke-width='2' transform='rotate(0 25 75)' />
+<polygon points='75, 60 90, 90 60, 90' fill='black' stroke='none' stroke-width='2' transform='rotate(0 75 75)' />
+</svg>

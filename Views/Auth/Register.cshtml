@@ -1,0 +1,74 @@
+@model CareerSim.Models.ViewModels.RegisterViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kayıt Ol</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="~/login/images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="~/login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/login/css/main.css">
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
+
+                <!-- Görsel Kolonu -->
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="~/login/images/img-01.png" alt="IMG">
+                </div>
+
+                <!-- Form -->
+                <form asp-action="Register" method="post" class="login100-form validate-form">
+                    <span class="login100-form-title p-b-33">Kayıt Ol</span>
+
+                    <!-- Genel Hatalar -->
+                    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                    <div class="wrap-input100 validate-input">
+                        <input asp-for="UserName" class="input100" placeholder="Kullanıcı Adı" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <input asp-for="Email" class="input100" placeholder="Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <input asp-for="Password" class="input100" type="password" placeholder="Şifre" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <input asp-for="ConfirmPassword" class="input100" type="password" placeholder="Şifre (Tekrar)" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+
+                    <div class="container-login100-form-btn m-t-20">
+                        <button class="login100-form-btn" type="submit">
+                            Kayıt Ol
+                        </button>
+                    </div>
+
+                    <div class="text-center p-t-45 p-b-4">
+                        <span>
+                            Zaten hesabınız var mı? <a asp-action="Login">Giriş Yap</a>
+                        </span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="~/login/js/main.js"></script>
+</body>
+</html>

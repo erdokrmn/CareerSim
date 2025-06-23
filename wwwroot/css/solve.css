@@ -1,0 +1,69 @@
+﻿/* Genel çerçeve */
+.question-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+    /* Soru görseli */
+    .question-card .question-image img {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Soru metni */
+    .question-card .question-text {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Şık kutuları */
+    .question-card .options-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+        /* Her bir şık */
+        .question-card .options-row label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            min-width: 100px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out, border-color 0.2s;
+        }
+
+            /* Hover efekti */
+            .question-card .options-row label:hover {
+                background-color: #eaeaea;
+                border-color: #999;
+            }
+
+        /* Checkbox görünümü */
+        .question-card .options-row input[type="checkbox"] {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        /* SVG görsel */
+        .question-card .options-row label img {
+            width: 50px;
+            height: auto;
+            max-height: 80px;
+            object-fit: contain;
+            display: inline-block;
+        }

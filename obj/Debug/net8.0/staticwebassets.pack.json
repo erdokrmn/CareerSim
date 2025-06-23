@@ -1,0 +1,517 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\Dashboard\\dashboard.css",
+      "PackagePath": "staticwebassets\\Dashboard\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\css\\matrix-question.css",
+      "PackagePath": "staticwebassets\\css\\matrix-question.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\css\\shape-list.css",
+      "PackagePath": "staticwebassets\\css\\shape-list.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\css\\solve.css",
+      "PackagePath": "staticwebassets\\css\\solve.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\css\\users\\user.css",
+      "PackagePath": "staticwebassets\\css\\users\\user.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\images\\default\\user.png",
+      "PackagePath": "staticwebassets\\images\\default\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\images\\users\\user.png",
+      "PackagePath": "staticwebassets\\images\\users\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\js\\datatables-init.js",
+      "PackagePath": "staticwebassets\\js\\datatables-init.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\js\\theme-and-sidebar.js",
+      "PackagePath": "staticwebassets\\js\\theme-and-sidebar.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\js\\toggleDetails.js",
+      "PackagePath": "staticwebassets\\js\\toggleDetails.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\css\\main.css",
+      "PackagePath": "staticwebassets\\login\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\css\\util.css",
+      "PackagePath": "staticwebassets\\login\\css\\util.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\login\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-Black.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-Italic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-Light.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-Medium.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-Thin.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\Montserrat-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\Montserrat-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\montserrat\\OFL.txt",
+      "PackagePath": "staticwebassets\\login\\fonts\\montserrat\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\fonts\\poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\images\\icons\\favicon.ico",
+      "PackagePath": "staticwebassets\\login\\images\\icons\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\images\\img-01.png",
+      "PackagePath": "staticwebassets\\login\\images\\img-01.png"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\login\\js\\main.js",
+      "PackagePath": "staticwebassets\\login\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\09f29c06-d110-4105-b9b0-f779529a4f51.svg",
+      "PackagePath": "staticwebassets\\svgs\\09f29c06-d110-4105-b9b0-f779529a4f51.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\1228edba-81a6-4070-89fe-5fd1209a0450.svg",
+      "PackagePath": "staticwebassets\\svgs\\1228edba-81a6-4070-89fe-5fd1209a0450.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\22be53e9-3c13-451e-a44e-b04e4bf1af45.svg",
+      "PackagePath": "staticwebassets\\svgs\\22be53e9-3c13-451e-a44e-b04e4bf1af45.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\305b5d53-ff10-456d-b113-e3eaf449f9e8.svg",
+      "PackagePath": "staticwebassets\\svgs\\305b5d53-ff10-456d-b113-e3eaf449f9e8.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\3f73cc24-4118-4746-b6d0-2f3178dab7ca.svg",
+      "PackagePath": "staticwebassets\\svgs\\3f73cc24-4118-4746-b6d0-2f3178dab7ca.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\44d455f1-db0f-40e4-a812-f3a666c735f4.svg",
+      "PackagePath": "staticwebassets\\svgs\\44d455f1-db0f-40e4-a812-f3a666c735f4.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\59823b8a-21fb-4945-8905-d2d8a619b738.svg",
+      "PackagePath": "staticwebassets\\svgs\\59823b8a-21fb-4945-8905-d2d8a619b738.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\5f91c63c-419b-438a-9b6e-d186f7f7cfe4.svg",
+      "PackagePath": "staticwebassets\\svgs\\5f91c63c-419b-438a-9b6e-d186f7f7cfe4.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\66ed26cb-db3f-4927-a993-379ad9dd09d8.svg",
+      "PackagePath": "staticwebassets\\svgs\\66ed26cb-db3f-4927-a993-379ad9dd09d8.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\66f6189d-e323-4c52-9e5c-988f10fc8623.svg",
+      "PackagePath": "staticwebassets\\svgs\\66f6189d-e323-4c52-9e5c-988f10fc8623.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\7a7dd90c-258a-4b36-b835-6f248a08260e.svg",
+      "PackagePath": "staticwebassets\\svgs\\7a7dd90c-258a-4b36-b835-6f248a08260e.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\81dc3dd1-4fb4-4628-a6b6-47d68d772dd9.svg",
+      "PackagePath": "staticwebassets\\svgs\\81dc3dd1-4fb4-4628-a6b6-47d68d772dd9.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\8c569144-80ab-448c-8098-5bd998efa0e3.svg",
+      "PackagePath": "staticwebassets\\svgs\\8c569144-80ab-448c-8098-5bd998efa0e3.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\8f4c620b-ee11-48c2-9bf4-3cdb405e0e95.svg",
+      "PackagePath": "staticwebassets\\svgs\\8f4c620b-ee11-48c2-9bf4-3cdb405e0e95.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\987c8923-a05f-4118-9133-4757699cefe7.svg",
+      "PackagePath": "staticwebassets\\svgs\\987c8923-a05f-4118-9133-4757699cefe7.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\ab51bd3b-1246-46cb-a500-e3682a5af108.svg",
+      "PackagePath": "staticwebassets\\svgs\\ab51bd3b-1246-46cb-a500-e3682a5af108.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\ad4c46a8-b55d-44aa-9115-4596ca21ad80.svg",
+      "PackagePath": "staticwebassets\\svgs\\ad4c46a8-b55d-44aa-9115-4596ca21ad80.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\b2759751-d49f-4a41-bc48-689cf4f14001.svg",
+      "PackagePath": "staticwebassets\\svgs\\b2759751-d49f-4a41-bc48-689cf4f14001.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\ba309956-18f7-4c57-b7d2-710b0ed0b3c1.svg",
+      "PackagePath": "staticwebassets\\svgs\\ba309956-18f7-4c57-b7d2-710b0ed0b3c1.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\c5f9ce50-6dae-4453-b858-ceb3a4ffb04b.svg",
+      "PackagePath": "staticwebassets\\svgs\\c5f9ce50-6dae-4453-b858-ceb3a4ffb04b.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\d5708972-8a89-48f3-ad68-2c3d9c966018.svg",
+      "PackagePath": "staticwebassets\\svgs\\d5708972-8a89-48f3-ad68-2c3d9c966018.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\d5d7494d-898f-495c-94eb-38c099c59f0e.svg",
+      "PackagePath": "staticwebassets\\svgs\\d5d7494d-898f-495c-94eb-38c099c59f0e.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\d62b81ab-7615-4e83-862f-1aad8ff53365.svg",
+      "PackagePath": "staticwebassets\\svgs\\d62b81ab-7615-4e83-862f-1aad8ff53365.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\ded8c62f-3ed3-49b4-b34a-df1081c3ab15.svg",
+      "PackagePath": "staticwebassets\\svgs\\ded8c62f-3ed3-49b4-b34a-df1081c3ab15.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\e095cd48-db05-440c-995c-6abb0139fa9c.svg",
+      "PackagePath": "staticwebassets\\svgs\\e095cd48-db05-440c-995c-6abb0139fa9c.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\e1e524bc-53b5-480b-a2af-6b106ebb9376.svg",
+      "PackagePath": "staticwebassets\\svgs\\e1e524bc-53b5-480b-a2af-6b106ebb9376.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\e3f2425a-1cd2-4b1e-b43e-f0df4f462868.svg",
+      "PackagePath": "staticwebassets\\svgs\\e3f2425a-1cd2-4b1e-b43e-f0df4f462868.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\f12a0168-5127-47d3-b488-c24b246508a8.svg",
+      "PackagePath": "staticwebassets\\svgs\\f12a0168-5127-47d3-b488-c24b246508a8.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\f7e0d905-1fa5-43a6-b7bc-cfe1ad40e2b6.svg",
+      "PackagePath": "staticwebassets\\svgs\\f7e0d905-1fa5-43a6-b7bc-cfe1ad40e2b6.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\svgs\\fb51dda3-193b-4d2c-990e-c257b8124295.svg",
+      "PackagePath": "staticwebassets\\svgs\\fb51dda3-193b-4d2c-990e-c257b8124295.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\uploads\\profile\\05e1e818-810c-4c3b-a1ee-ff8e7ee31909.jpg",
+      "PackagePath": "staticwebassets\\uploads\\profile\\05e1e818-810c-4c3b-a1ee-ff8e7ee31909.jpg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\uploads\\profile\\c67d0cf4-befc-4919-adc9-7b6760e174f2.png",
+      "PackagePath": "staticwebassets\\uploads\\profile\\c67d0cf4-befc-4919-adc9-7b6760e174f2.png"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\source\\repos\\CareerSim\\CareerSim\\wwwroot\\uploads\\profile\\d691ff83-3b94-4b0e-b74c-a89f277bdf64.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\profile\\d691ff83-3b94-4b0e-b74c-a89f277bdf64.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CareerSim.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CareerSim.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CareerSim.props",
+      "PackagePath": "build\\CareerSim.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CareerSim.props",
+      "PackagePath": "buildMultiTargeting\\CareerSim.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CareerSim.props",
+      "PackagePath": "buildTransitive\\CareerSim.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

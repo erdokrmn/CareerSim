@@ -1,0 +1,33 @@
+@model CareerSim.Models.Career.Career
+
+@{
+    ViewData["Title"] = Model.Id == 0 ? "Yeni Kariyer Ekle" : "Kariyeri Düzenle";
+    Layout = "_DashboardLayout";
+}
+@if (ViewBag.SuccessMessage != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @ViewBag.SuccessMessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Kapat"></button>
+    </div>
+}
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="@(Model.Id == 0 ? "AddCareer" : "EditCareer")" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Kaydet</button>
+    <a asp-action="CareerList" class="btn btn-secondary">Geri Dön</a>
+</form>

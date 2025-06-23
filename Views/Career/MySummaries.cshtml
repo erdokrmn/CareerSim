@@ -1,0 +1,30 @@
+@model List<CareerSim.Models.ViewModels.MySummaryViewModel>
+@{
+    ViewData["Title"] = "AI Sonuçlarım";
+    Layout = "_UserLayout";
+}
+
+<h2>AI Sonuçlarım</h2>
+
+@if (!Model.Any())
+{
+    <p>Henüz bir AI değerlendirmesi almamışsınız.</p>
+}
+else
+{
+    <form method="get" asp-action="EvaluateSummary" asp-controller="Career" class="mb-4">
+        <label for="careerSelect">Bir kariyer seçin:</label>
+        <select id="careerSelect" name="careerId" class="form-select" onchange="this.form.submit()">
+            <option value="">-- Seçiniz --</option>
+            @foreach (var item in Model)
+            {
+                <option value="@item.CareerId">
+                    @item.CareerTitle (@item.CreatedAt.ToString("g"))
+                </option>
+            }
+        </select>
+        <noscript>
+            <button type="submit" class="btn btn-primary mt-2">Göster</button>
+        </noscript>
+    </form>
+}

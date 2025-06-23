@@ -1,0 +1,58 @@
+@model CareerSim.Models.ViewModels.CareerSummaryViewModel
+@{
+    ViewData["Title"] = "AI Değerlendirme Özeti";
+    Layout = "_UserLayout";
+}
+
+<h2>@Model.CareerTitle — AI Değerlendirmesi</h2>
+<section class="ai-summary-section">
+    <h4>🤖 Değerlendirme Sonucu:</h4>
+    <pre class="ai-summary-text">@Model.SummaryText</pre>
+</section>
+
+<button id="toggleDetailsBtn" class="toggle-details-btn">
+    🔍 Detayları Göster
+</button>
+
+<div id="detailsContainer">
+    @foreach (var item in Model.Items)
+    {
+        <section class="ai-details-section">
+            <h5>🧩 @item.TaskTitle</h5>
+            <p><strong>Soru:</strong> @item.TaskDescription</p>
+            <p><strong>Örnek Cevap:</strong> @item.SampleAnswer</p>
+            <p><strong>Sizin Cevabınız:</strong></p>
+            <pre>@item.UserAnswer</pre>
+        </section>
+    }
+</div>
+
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.getElementById("toggleDetailsBtn");
+            const detailSections = document.querySelectorAll(".ai-details-section");
+
+            // Başlangıçta gizli olduğundan, zaten display: none durumunda
+
+            btn.addEventListener("click", function () {
+                const isVisible = detailSections[0]?.classList.contains("active");
+
+                detailSections.forEach(section => {
+                    if (isVisible) {
+                        section.classList.remove("active");
+                    } else {
+                        section.classList.add("active");
+                    }
+                });
+
+                btn.textContent = isVisible ? "🔍 Detayları Göster" : "🔽 Detayları Gizle";
+            });
+        });
+    </script>
+}
+
+
+
+
